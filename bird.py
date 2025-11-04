@@ -4,7 +4,7 @@ import game_world
 import game_framework
 import random
 
-PIXEL_PER_METER = (1.0 / 0.3)
+PIXEL_PER_METER = (1.0 / 0.01)
 
 FLY_SPEED_KMPH = 10.0
 FLY_SPEED_MPM = (FLY_SPEED_KMPH * 1000.0 / 60.0)
