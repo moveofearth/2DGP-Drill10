@@ -21,10 +21,11 @@ class Ball:
     def update(self):
         # y 축 속도에 중력 가속도 적용
         self.yv -= GRAVITY * game_framework.frame_time  # m/s
+
         # 위치 업데이트
         self.x += self.xv * game_framework.frame_time * PIXEL_PER_METER
         self.y += self.yv * game_framework.frame_time * PIXEL_PER_METER
-        # 지면 충돌 처리
 
+        # 지면 충돌 처리
         if self.y < 60:
             game_world.remove_object(self)
