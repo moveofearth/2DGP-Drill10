@@ -40,3 +40,7 @@ class Bird:
             self.face_dir = -1
 
         self.frame = (self.frame + 1) % 14
+
+    def draw(self):
+        if self.face_dir == 1:
+            self.image.clip_draw((int(self.frame) % 5) * 183, 506 - (int(self.frame) // 5) * 168, 183, 168, self.x, self.y)
